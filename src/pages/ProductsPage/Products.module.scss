@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 479px) {
+      @content;
+    }
+  } @else if $media == wide-handhelds {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media == tablets {
+    @media only screen and (max-width: 1087px) {
+      @content;
+    }
+  }
+}
+
+@mixin grid-col($gap) {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: $gap;
+}
+
+html {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-columns: 1fr;
+  background: #f2f2f2;
+}

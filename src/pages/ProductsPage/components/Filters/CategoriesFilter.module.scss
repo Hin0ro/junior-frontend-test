@@ -1,0 +1,35 @@
+@import '../../Products.module.scss';
+
+.filterCategoriesTitle {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #a8b8ca;
+  margin-bottom: 20px;
+}
+.button {
+  border-color: #037bff;
+  border-width: thin;
+  border-radius: 8px;
+  padding: 5px 17px;
+  color: #037bff;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:not(:focus):hover {
+    opacity: 0.5;
+  }
+}
+.active {
+  color: #ffffff;
+  background-color: #037bff;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.categoryList {
+  row-gap: 10px;
+  @include grid-col(12px);
+  @include respond-to(wide-handhelds) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

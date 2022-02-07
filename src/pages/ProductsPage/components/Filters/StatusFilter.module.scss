@@ -1,0 +1,18 @@
+.statusTitle {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #a8b8ca;
+  margin-bottom: 20px;
+}
+
+.checkboxContainer {
+  font-weight: 500;
+  span {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  label:last-of-type {
+    margin-left: 14px;
+  }
+}

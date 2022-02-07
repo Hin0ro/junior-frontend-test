@@ -1,0 +1,49 @@
+.errorContainer {
+    text-align: center;
+    font-size: 2vw;
+    p,
+    code {
+      font-weight: 900;
+      margin: 0.5em;
+      span {
+        display: block;
+        margin-top: 0.25em;
+      }
+    }
+    button {
+      background: none;
+      border: none;
+      color: #037bff;
+      text-decoration-line: underline;
+      cursor: pointer;
+      padding: 5px;
+      &:hover {
+        opacity: 0.5;
+      }
+    } 
+  }
+  
+  .errorText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      font-size: 8vw;
+      font-weight: 900;
+      background-color: #000;
+      color: #f2f2f2;
+      display: block;
+      padding: 0.5em;
+    }
+  
+    h1:nth-child(2) {
+      position: absolute;
+      background-color: #f2f2f2;
+      color: #000;
+      clip-path: inset(-1% -1% 50% -1%);
+    }
+  }
+  
+  
